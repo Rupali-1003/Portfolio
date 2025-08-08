@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rupali Sharma | DevOps Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+
+    header {
+      background: linear-gradient(to right, #1e293b, #334155);
+      padding: 3rem 2rem;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #38bdf8;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #94a3b8;
+      font-style: italic;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      border-bottom: 1px solid #334155;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #22d3ee;
+      margin-bottom: 1rem;
+    }
+
+    .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    }
+
+
+    .skills, .projects, .education, .internship, .contact {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .skill-card, .project-card, .education p, .internship ul, .contact p {
+      background: #1e293b;
+      padding: 1rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 10px #0ea5e9;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      transition: transform 0.3s;
+    }
+
+    .skill-card:hover, .project-card:hover, .education p:hover, .internship ul:hover, .contact p:hover {
+      transform: scale(1.05);
+    }
+
+    .project-card img , .education img, .internship img, .contact img {
+      width: 40px;
+      height: 40px;
+    }
+
+   
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #0f172a;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Rupali Sharma</h1>
+    <p>Aspiring DevOps Engineer | Python & Linux Enthusiast</p>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate DevOps enthusiast with hands-on experience in Linux, Shell scripting, Git, Python, and cloud technologies. I love automating workflows and deploying scalable solutions. With a strong academic background and real-world internship experience in cybersecurity and networking, I’m on a mission to become a world-class DevOps Engineer.
+    </p>
+  </section>
+
+  <section class="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card"><img src="https://img.icons8.com/color/48/000000/linux.png" />Linux</div>
+    <div class="skill-card"><img src="https://img.icons8.com/color/48/000000/git.png" />Git</div>
+    <div class="skill-card"><img src="https://img.icons8.com/ios-filled/50/38bdf8/github.png" />GitHub</div>
+    <div class="skill-card"><img src="https://img.icons8.com/external-flat-juicy-fish/60/external-shell-coding-and-development-flat-flat-juicy-fish.png" />Shell Scripting</div>
+    <div class="skill-card"><img src="https://img.icons8.com/color/48/000000/python.png" />Python</div>
+    <div class="skill-card"><img src="https://img.icons8.com/color/48/networking.png" />Networking</div>
+    <div class="skill-card"><img src="https://img.icons8.com/color/48/cyber-security.png" />Cyber Security</div>
+    <div class="skill-card"><img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" />AWS Cloud</div>
+  </div>
+</section>
+
+
+  <section class="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <img src="https://img.icons8.com/fluency/48/code.png" />
+      <div>
+        <strong>Automated Backup Script</strong>
+        <p>Created a shell script to automate backup of files/folders and integrated it with Python to upload to AWS S3.</p>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="https://img.icons8.com/fluency/48/code-fork.png" />
+      <div>
+       <strong>Bash Monitor System</strong>
+                <p>Automated disk and memory monitoring using Bash, logs output, and triggers alerts. Ideal for system administrators.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="education">
+    <h2>Education</h2>
+  
+      <p><strong>B.Sc in Computer Science</strong><br>Dayanand Mahila Mahavidyalaya, Kurukshetra</p>
+      <p><strong>MCA</strong><br>Kurukshetra University, Kurukshetra</p>
+  
+  
+  </section>
+
+  <section class="internship">
+    <h2>Internship</h2>
+    <div class="internship ul">
+     
+     <p><strong>NS3EDU, Gurugram</strong> — Cyber Security, Networking & AWS Cloud</p>
+        <ul>
+            <li>Configured and secured virtual machines and networks for penetration testing simulations</li>
+            <li>Worked on firewall configurations and packet tracing</li>
+            <li>Set up AWS environments, created buckets, and deployed EC2 instances</li>
+            <li>Explored vulnerability scanning tools like Nessus and Wireshark</li>
+        </ul></div>
+    </section>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mail to:rupalisharma1003@gmail.com" style="color:#38bdf8;">rupalisharma1003@gmail.com</a></p>
+    <p>More contact options coming soon!</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Rupali Sharma. All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>
